@@ -1,22 +1,24 @@
-
 ❤️ Heart Disease Prediction App
 
-A Machine Learning web application built using Streamlit, Logistic Regression, and PKL model files.
-This app predicts the risk of heart disease based on medical parameters such as age, blood pressure, cholesterol, ECG results, and more.
+A Machine Learning–powered web application for predicting heart disease risk.
+
+This project uses Streamlit, Logistic Regression, and PKL model files to analyze key medical parameters such as age, blood pressure, cholesterol levels, ECG results, and more.
+The app provides risk prediction along with a confidence score for better interpretation.
 
 🚀 Features
 
-🧠 ML Model: Logistic Regression
+🧠 Machine Learning Model: Logistic Regression
 
-📂 Loads Model, Scaler & Feature Columns from PKL files
+📂 Loads Model, Scaler & Feature Columns from .pkl files
 
-🎨 Modern UI with Streamlit
+🎨 Modern & User-Friendly UI built with Streamlit
 
-📊 Displays Prediction + Confidence Score
+📊 Displays prediction results + probability score
 
-⚠️ Educational Use Only
+⚠️ For educational and awareness purposes only
 
 📁 Project Structure
+
 Heart-Disease-Prediction-App/
 │── app.py
 │── LR_heart.pkl
@@ -27,38 +29,22 @@ Heart-Disease-Prediction-App/
 
 🏗️ How It Works
 
-User enters medical parameters
+- User enters health parameters into the Streamlit form
 
-App one-hot encodes categorical inputs
+- App converts categorical inputs into one-hot encoded values
 
-Input is scaled using the stored StandardScaler
+- Inputs are scaled using the saved StandardScaler
 
 Logistic Regression model predicts:
 
-1 → High Risk
+1 → High Risk of Heart Disease
 
-0 → Low Risk
+0 → Low Risk of Heart Disease
 
-Confidence score (probability) is displayed
-
-🧪 Demo Screenshots (optional)
-
-Add your screenshots here later
-
-💻 Installation & Running the App
-1️⃣ Clone the Project
-git clone https://github.com/YOUR-USERNAME/heart-disease-prediction-app.git
-cd heart-disease-prediction-app
-
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-
-3️⃣ Run the App
-streamlit run app.py
 
 🔧 Requirements
 
-Install from requirements.txt:
+All required packages are listed in requirements.txt:
 
 streamlit
 numpy
@@ -68,36 +54,31 @@ joblib
 
 🧠 Model Files (PKL)
 
-The app uses:
+This project uses the following saved models:
 
-LR_heart.pkl → Logistic Regression Model
+LR_heart.pkl → Trained Logistic Regression model
 
-scaler.pkl → StandardScaler
+scaler.pkl → StandardScaler used during training
 
-columns.pkl → List of expected one-hot encoded columns
+columns.pkl → Expected input feature column list
 
-Make sure they are placed inside the same folder as app.py.
+➡️ Important: These files must be in the same folder as app.py.
 
-🌐 Deployment (Optional)
+🌐 Deployment
 
-You can deploy on:
+You can deploy this application easily on:
 
 Streamlit Cloud
 
 HuggingFace Spaces
 
-GitHub Codespaces
-
 Render
 
-I can help you deploy if you want — just ask!
+GitHub Codespaces
+
+(If you want deployment help, just ask!)
 
 👨‍💻 Author
 
 Gauransh Pawar (Akarsh)
-Made with ❤️ using Python & Streamlit
-
-⚠️ Disclaimer
-
-This app is for educational and awareness purposes only.
-It does not replace professional medical advice.
+Made with ❤️ using Python, Machine Learning, and Streamlit
